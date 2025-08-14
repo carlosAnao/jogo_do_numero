@@ -1,21 +1,78 @@
+html {
+    font-family: 'Arial', san-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-const palpites = document.querySelector('.palpites');
-const ultimoResultado = document.querySelector('.ultimoResultado');
-const baixoOouAlto = document.querySelector ('.baixoOouAlto');
-const envioPalpite = document.querySelector ('.envioPalpite');
-const campoPalpite = document.querySelector ('.campoPalpite');
+body {
+    width: 50%;
+    max-width: 800px;
+    min-width: 480px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4-x 8px rgba(0, 0, 0, 0.2);
+}
 
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #333333;
+    margin-bottom: 20px;
+}
 
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-function verificarPalpite() {
-    const palpiteUsuario = Number(campoPalpite.value);
-    if (contagemPalpites === 1); {
-        palpites.textContent = "Palpites anteriores: "
-    }
-    
-    palpites.textContent += palpiteUsuario + " ";
+.formulario input[type="number"] {
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    font-size: 1.1em;
+}
 
-    if (palpiteUsuario === numeroAleatorio) {
-        ultimoResultado.textContent = "Parabens! Voce Acertou!";
+.formulario input[type="submit"]{
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
-    }
+.formulario input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+.paragrafosResultado p {
+    font-size: 1.2em;
+    text-align:center;
+    margin: 10px 0;
+}
+
+.ultimoResultado {
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.ultimoResultado.errado {
+    background-color: #dc3545;
+}
+
+.ultimoResultado.correto {
+    background-color: #28a745;
+}
