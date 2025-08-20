@@ -63,6 +63,6 @@ campoPalpite.disabled = false;
 envioPalpite.disabled = false;
 campoPalpite.value = "";
 campoPalpite.focus();
-ultimoResulto.style.backgroundColor = 'white';
-numeroAlaetorio = Math.floor(Math.random() * 100) + 1;
+ultimoResultado.style.backgroundColor = 'white';
+numeroAleatorio = Math.floor(Math.random() * 100) + 1;
 }
