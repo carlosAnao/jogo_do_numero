@@ -58,11 +58,11 @@ function reiniciarJogo() {
     paragrafoReiniciar.textContent = "";
   }
 
-botaoReiniciar.parentNode.removeChild(botaoReiniciar);
-campoPalpite.disable = false;
-envioPalpite.disable = false;
-campoPalpite.value = "";
-campoPalpite.focus();
-ultimoResulto.style.backgroundColor = 'white';
-numeroAletorio = Math.floor(Mat.random() * 100) + 1;
+  botaoReiniciar.parentNode.removeChild(botaoReiniciar);
+  campoPalpite.disabled = false;
+  envioPalpite.disabled = false;
+  campoPalpite.value = "";
+  campoPalpite.focus();
+  ultimoResultado.style.backgroundColor = 'white';
+  numeroAleatorio = Math.floor(Math.random() * 100) + 1;
 }
