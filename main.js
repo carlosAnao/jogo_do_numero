@@ -52,17 +52,17 @@ function finalizarJogo() {
 }
 
 function reiniciarJogo() {
-  contagemPalpites = 1;
-  const paragrafosReiniciar = document.querySelectorAll('.paragrafosResultados p');
-  for (const paragrafoReiniciar of paragrafosReiniciar) {
-    paragrafoReiniciar.textContent = "";
-  }
+  contagemPalpites = 1;
+  const paragrafosReiniciar = document.querySelectorAll('.paragrafosResultados p');
+  for (const paragrafoReiniciar of paragrafosReiniciar) {
+    paragrafoReiniciar.textContent = "";
+  }
 
-  botaoReiniciar.parentNode.removeChild(botaoReiniciar);
-  campoPalpite.disabled = false;
-  envioPalpite.disabled = false;
-  campoPalpite.value = "";
-  campoPalpite.focus();
-  ultimoResultado.style.backgroundColor = 'white';
-  numeroAleatorio = Math.floor(Math.random() * 100) + 1;
+botaoReiniciar.parentNode.removeChild(botaoReiniciar);
+campoPalpite.disabled = false;
+envioPalpite.disabled = false;
+campoPalpite.value = "";
+campoPalpite.focus();
+ultimoResulto.style.backgroundColor = 'white';
+numeroAlaetorio = Math.floor(Math.random() * 100) + 1;
 }
